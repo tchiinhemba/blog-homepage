@@ -1,0 +1,40 @@
+
+
+.hero_wrapper {
+    padding: 8rem 10rem;
+    background: url("../../assets/images/hero-image.jpg") no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero_information .highlight {
+    font-size: 1.2rem;
+    color: $blue;
+}
+
+.hero_wrapper h1 {
+    font-size: 4rem;
+
+    span::after {
+        content: "";
+        width: .8rem;
+        height: .8rem;
+        background-color: black;
+        color: black;
+        vertical-align: end;
+        display: inline-block;
+    }
+}
+
+.hero_information .hero_description {
+    font-size: 1.1rem;
+    color: $gray;
+}
