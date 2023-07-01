@@ -1,0 +1,29 @@
+.featured_posts {
+  padding: $mr-6 $mr-1x;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_tittle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $gray-dark;
+}
+
+.section_buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.btn_left,
+.btn_right {
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: $white;
+  color: $gray-dark;
+}
