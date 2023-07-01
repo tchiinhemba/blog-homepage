@@ -1,0 +1,40 @@
+
+
+.hero_wrapper {
+    padding: 8rem 10rem;
+    background: url("https://source.unsplash.com/random") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero_information :first-child {
+    font-size: 1.2rem;
+    color: $blue;
+}
+
+.hero_wrapper h1 {
+    font-size: 4rem;
+
+    span::after {
+        content: "";
+        width: .8rem;
+        height: .8rem;
+        background-color: black;
+        color: black;
+        vertical-align: middle;
+        display: inline-block;
+        margin-bottom: .4rem;
+    }
+}
+
+.hero_information :last-child {
+    font-size: 1.1rem;
+    color: $gray;
+}
