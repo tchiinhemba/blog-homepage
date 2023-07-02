@@ -5,6 +5,7 @@
 .header-section {
   display: flex;
   justify-content: space-between;
+  padding-bottom: $mr-4;
 }
 
 .section_tittle {
@@ -26,4 +27,10 @@
   font-weight: bold;
   background-color: $white;
   color: $gray-dark;
+}
+
+.featured_carousel {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1.8rem;
 }

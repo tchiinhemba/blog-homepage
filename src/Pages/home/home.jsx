@@ -1,11 +1,14 @@
 import React from "react";
-import { Header, Hero } from "../../components";
-
-import styles from './styles.module.scss'
-
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 
+import styles from "./styles.module.scss";
+import { Header, Hero, FeaturedCard } from "../../components";
+
+import { Data } from "../../data";
+
 export function Home() {
+  const { featuredPost } = Data();
+
   return (
     <React.Fragment>
       <Header />
@@ -25,6 +28,21 @@ export function Home() {
             </button>
           </div>
         </div>
+        <main>
+          <div className={styles["featured_carousel"]}>
+            {featuredPost.map((value) => {
+              return (
+                <FeaturedCard
+                  image={value.image}
+                  tittle={value.tittle}
+                  excert={value.excert}
+                  comments={value.comments}
+                  views={value.views}
+                />
+              );
+            })}
+          </div>
+        </main>
       </section>
     </React.Fragment>
   );
